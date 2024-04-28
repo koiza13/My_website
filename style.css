@@ -1,6 +1,6 @@
 body {
     background-image: url(cat.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-attachment: fixed;
     background-position: bottom;
 }
