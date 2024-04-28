@@ -1,0 +1,20 @@
+body {
+    background-image: url(cat.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+p{
+    border-style: dotted solid ;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-radius: 10 px;
+    padding: 22px 2px;
+}
+.box{
+    background-color: #45aae9;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 200px;
+}
