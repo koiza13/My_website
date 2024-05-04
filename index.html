@@ -2,13 +2,22 @@
 <head>
     <title>หน้าเว็บไซต์ที่สวยที่สุดในโลก</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      function hello(alertText){
+        alert("Hello! "+alertText)
+      }
+      function showMyName(){
+        document.getElementById("myName").innerHTML = "My Name is: <b>PRAPASSORN SOPA</b>";
+      }
+    </script>
 </head>
 <body bgcolor="lightgreen">
     <center>
         <img width="100" src="logop.png"/>
     </center>
     <font color="#FF5757"> <h1 align="center">น.ส.ประภัสสร โสภา</h1></font>
-    
+    <p id="myName">
+      <button onclick="showMyName()">Click me!</button>
     <p>ข้อมูลส่วนตัว : อายุ 24 ปี </p>
 
     <p>ประวัติการศึกษา : มหาวิทยาลัยขอนแก่น</p>
