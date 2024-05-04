@@ -3,12 +3,18 @@
     <title>หน้าเว็บไซต์ที่สวยที่สุดในโลก</title>
     <link rel="stylesheet" href="style.css">
     <script>
-      function hello(alertText){
-        alert("Hello! "+alertText)
-      }
-      function showMyName(){
+    let isShowMyName = false;
+    function hello(alertText){
+      alert("Hello! "+alertText)
+    }
+    function toggleMyName(){
+      if(!isShowMyName){
         document.getElementById("myName").innerHTML = "My Name is: <b>PRAPASSORN SOPA</b>";
+      } else {
+        document.getElementById("myName").innerHTML = "";
       }
+      isShowMyName = !isShowMyName
+    }
     </script>
 </head>
 <body bgcolor="lightgreen">
@@ -16,8 +22,9 @@
         <img width="100" src="logop.png"/>
     </center>
     <font color="#FF5757"> <h1 align="center">น.ส.ประภัสสร โสภา</h1></font>
-    <p id="myName">
-      <button onclick="showMyName()">Click me!</button>
+    <p>
+      <span id="myName"></span>
+      <button onclick="toggleMyName()">Click me!</button>
     <p>ข้อมูลส่วนตัว : อายุ 24 ปี </p>
 
     <p>ประวัติการศึกษา : มหาวิทยาลัยขอนแก่น</p>
